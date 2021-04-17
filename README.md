@@ -19,3 +19,12 @@ Example: (french, NATIONALITY) (refund,O)
 Example: hi   UH, yes   UH, I   PRP, missing VBG
 5. Unit testing- The unit testing is for the developers to test on a small part of the whole program so it is easier to find mistakes and change them. The main idea of ours are testing whether the bot is working if users correctly type in the texts.\
 Example: To check if the user's input are valid. If users hit enter with nothing in the textbox the bot would tell the users "Please type something. We can't understand.".
+
+### Individual Project Updates
+In the individual project, I mainly worked on adding the Google Translate API to allow for more than 1 language to be spoken by the Chatbot. Through this iteration, I worked by obtaining a Google cloud API key credential, and then I enabled the Google Translate API on my cloud platform.
+
+List of changes:
+1. Added new code dependencies to the pom.xml file to allow the Google Translate API to work properly.
+2. Imported google translate API libraries to my java code file.
+3. Added a new "translate" method that works by taking the API key, a string value/values, and an argument that stands for the second language picked. Callinng this method works by translating the strings chosen to the second language picked (in my case French, though it works for any other language).
+4. Few modifications to the java file's methods (added an eng and french method to respond properly to each language when chosen).
