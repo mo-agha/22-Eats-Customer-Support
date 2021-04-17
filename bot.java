@@ -22,10 +22,13 @@ import edu.stanford.nlp.util.TypesafeMap;
 import java.awt.event.ActionEvent;
 
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import javax.swing.JScrollPane;
 
@@ -79,6 +82,18 @@ public class bot extends JFrame{
 		chatbox.setLocation(1550,0);
 
 		bot("Welcome to the chat");
+		
+		//Tried adding a Wikipedia API that reads a fact of the day at the top of the chat, but didn't successfully work so decided to comment it out.
+//		URL u = new URL("https://en.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&explaintext&redirects=1&pageids=26133246");
+//		BufferedReader in = new BufferedReader(
+//				new InputStreamReader(u.openStream()));
+//
+//		String inputLine;
+//
+//		while ((inputLine = in.readLine()) != null)
+//			System.out.println(inputLine);
+//		in.close();	
+		
 		bot("The text box to enter your text is on the right -->");
 
 		bot("");
